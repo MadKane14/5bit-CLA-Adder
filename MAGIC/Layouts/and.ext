@@ -1,0 +1,31 @@
+timestamp 1731936772
+version 8.3
+tech scmos
+style TSMC0.18um(tsmc18)from:t11b
+scale 1000 1 9
+resistclasses 6700 7500 929000 929000 1 7700 7700 80 80 80 70 70 40
+use inverter inverter_0 1 0 0 0 1 47
+use nand nand_0 1 0 -82 0 1 46
+node "gnd" 0 47.1186 -9 0 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 54 30 0 0 0 0 0 0 0 0 0 0
+node "b" 0 24.354 -44 25 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 20 18 0 0 0 0 0 0 0 0 0 0
+node "y" 0 21.0864 29 35 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 16 16 0 0 0 0 0 0 0 0 0 0
+node "m1_n4_35#" 0 21.0864 -4 35 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 16 16 0 0 0 0 0 0 0 0 0 0
+node "a" 0 24.354 -44 33 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 20 18 0 0 0 0 0 0 0 0 0 0
+node "vdd" 0 25.509 -9 79 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 54 30 0 0 0 0 0 0 0 0 0 0
+node "w_n4_47#" 6503 253.109 -4 47 nw 0 0 0 0 252 96 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "b" "a" 51.5475
+cap "vdd" "w_n4_47#" 21.6096
+cap "inverter_0/Vdd" "nand_0/b" -1.42109e-14
+cap "nand_0/a" "nand_0/b" 1.42109e-14
+cap "inverter_0/Vdd" "nand_0/a" -2.84217e-14
+cap "inverter_0/Vdd" "inverter_0/IN" 2.84217e-14
+merge "nand_0/vdd" "inverter_0/Vdd" -115.886 0 0 0 0 -82 -170 0 0 0 0 0 0 0 0 0 -24 0 0 0 0 0 0 0 0 0 0
+merge "inverter_0/Vdd" "w_n4_47#"
+merge "w_n4_47#" "vdd"
+merge "nand_0/a" "a" -8.016 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8 0 0 0 0 0 0 0 0 0 0
+merge "nand_0/b" "b" -8.016 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8 0 0 0 0 0 0 0 0 0 0
+merge "nand_0/y" "inverter_0/IN" -16.032 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -16 0 0 0 0 0 0 0 0 0 0
+merge "inverter_0/IN" "m1_n4_35#"
+merge "inverter_0/OUT" "y" -8.016 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8 0 0 0 0 0 0 0 0 0 0
+merge "nand_0/gnd" "inverter_0/gnd" -24.048 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -24 0 0 0 0 0 0 0 0 0 0
+merge "inverter_0/gnd" "gnd"

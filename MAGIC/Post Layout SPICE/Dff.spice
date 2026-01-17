@@ -1,0 +1,109 @@
+* SPICE3 file created from Dff.ext - technology: scmos
+.include TSMC_180nm.txt
+
+Vdd Vdd 0 1.8
+
+Vclk clk 0 PULSE(0 1.8 0 0n 0n 1n 2n)
+
+Vd d 0 PULSE(0 1.8 0 0n 0n 4n 8n)
+
+M1002 a_6_6# d Vdd Vdd CMOSP w=1.8u l=0.18u
+M1003 b clk a_6_6# Vdd CMOSP w=1.8u l=0.18u
+M1004 a_47_6# b Vdd Vdd CMOSP w=1.8u l=0.18u
+M1005 b d 0 0 CMOSN w=0.9u l=0.18u
+M1013 q1 b 0 0 CMOSN w=0.9u l=0.18u
+
+M1000 q1 clk a_47_6# Vdd CMOSP w=1.8u l=0.18u
+M1011 a q1 Vdd Vdd CMOSP w=1.8u l=0.18u
+M1015 a_90_15# q1 0 0 CMOSN w=0.9u l=0.18u
+M1006 a clk a_90_15# 0 CMOSN w=0.9u l=0.18u
+M1009 a_131_15# a 0 0 CMOSN w=0.9u l=0.18u
+
+M1014 q2 a Vdd Vdd CMOSP w=1.8u l=0.18u
+M1008 q2 clk a_131_15# 0 CMOSN w=0.9u l=0.18u
+M1001 qnot q2 Vdd Vdd CMOSP w=1.8u l=0.18u
+M1012 qnot q2 0 0 CMOSN w=0.9u l=0.18u
+M1010 q qnot Vdd Vdd CMOSP w=1.8u l=0.18u
+M1007 q qnot 0 0 CMOSN w=0.9u l=0.18u
+
+C0 q2 clk 0.07fF
+C1 Vdd a_6_6# 0.37fF
+C2 a_47_6# Vdd 0.37fF
+C3 a a_90_15# 0.10fF
+C4 Vdd qnot 0.36fF
+C5 a a_131_15# 0.11fF
+C6 b clk 0.39fF
+C7 Vdd q2 0.37fF
+C8 d clk 0.32fF
+C9 d b 0.05fF
+C10 a q2 0.05fF
+C11 Vdd clk 0.29fF
+C12 Vdd b 0.24fF
+C13 q1 a_90_15# 0.11fF
+C14 0 a_90_15# 0.10fF
+C15 0 q 0.13fF
+C16 a_47_6# q1 0.24fF
+C17 a clk 0.32fF
+C18 Vdd d 0.19fF
+C19 a_131_15# 0 0.10fF
+C20 0 qnot 0.19fF
+C21 0 q2 0.05fF
+C22 a Vdd 0.46fF
+C23 q1 clk 0.32fF
+C24 q1 b 0.05fF
+C25 0 clk 1.43fF
+C26 0 b 0.16fF
+C27 0 d 0.05fF
+C28 q1 Vdd 0.22fF
+C29 q1 a 0.05fF
+C30 a 0 0.05fF
+C31 qnot q 0.05fF
+C32 a_131_15# q2 0.10fF
+C33 q2 qnot 0.05fF
+C34 a_90_15# clk 0.05fF
+C35 a_6_6# clk 0.05fF
+C36 q1 0 0.16fF
+C37 b a_6_6# 0.24fF
+C38 a_131_15# clk 0.05fF
+C39 a_47_6# clk 0.05fF
+C40 a_47_6# b 0.10fF
+C41 d a_6_6# 0.10fF
+C42 Vdd q 0.29fF
+C43 0 0 0.40fF
+C44 a_131_15# 0 0.12fF
+C45 a_90_15# 0 0.14fF
+C46 clk 0 3.27fF
+C47 q 0 0.07fF
+C48 a_47_6# 0 0.00fF
+C49 a_6_6# 0 0.00fF
+C50 qnot 0 0.21fF
+C51 q2 0 0.05fF
+C52 a 0 0.45fF
+C53 q1 0 0.06fF
+C54 b 0 0.21fF
+C55 d 0 0.14fF
+C56 Vdd 0 8.44fF
+
+.tran 0.1n 20n
+
+.control
+set color0 = white
+set color1 = black
+
+run
+set curplottitle="Madhur-Kankane-2024102061-6-DFF"
+plot V(clk) 2+V(d) 4+V(q)
+
+.endc
+
+.measure tran tpdr
++ trig v(clk) val={0.5*1.8} rise=1
++ targ v(q) val={0.5*1.8} rise=1
+
+.measure tran tpdf
++ trig v(clk) val={0.5*1.8} rise=2
++ targ v(q) val={0.5*1.8} fall=1
+
+.measure tran tpd param='(tpdr+tpdf)/2'
+
+.end

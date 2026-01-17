@@ -1,0 +1,21 @@
+.include NOT.sub
+
+.subckt XOR x y out vdd gnd lambda=0.09u width_N=0.9u width_P=1.8u
+
+xinv1 x xnot vdd gnd NOT 
+* lambda={lambda} width_N={width_N} width_P={width_P}
+xinv2 y ynot vdd gnd NOT 
+* lambda={lambda} width_N={width_N} width_P={width_P}
+
+M1 node x y gnd CMOSN W={width_N} L={2*LAMBDA}
++ AS={5*width_N*LAMBDA} PS={10*LAMBDA+2*width_N}
++ AD={5*width_N*LAMBDA} PD={10*LAMBDA+2*width_N}
+
+M2 node xnot ynot gnd CMOSN W={width_N} L={2*LAMBDA}
++ AS={5*width_N*LAMBDA} PS={10*LAMBDA+2*width_N}
++ AD={5*width_N*LAMBDA} PD={10*LAMBDA+2*width_N}
+
+xinv3 node out vdd gnd NOT 
+* lambda={lambda} width_N={width_N} width_P={width_P}
+
+.ends XOR

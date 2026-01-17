@@ -1,0 +1,29 @@
+* CMOS inverter 
+
+.include TSMC_180nm.txt
+.include NOT.sub
+.param SUPPLY=1.8
+.param LAMBDA=0.09u
+.param width_P=20*LAMBDA
+.param width_N=10*LAMBDA
+.global gnd vdd
+
+Vdd vdd gnd {SUPPLY}
+
+vin x gnd pulse 0 1.8 0ns 0.3ns 0.3ns 10ns 20ns
+
+xinv x y vdd gnd NOT LAMBDA=0.09u width_N={20*LAMBDA} width_P={1.43*width_N}
+Cout y gnd 3.4f
+
+.tran 0.1n 80n 
+
+.control
+run
+set color0 = white 
+set color1 = black
+
+set curplottitle="Madhur-Kankane-2024102061-3-Inverter"
+plot v(y) 2+v(x)
+
+.endc
+.end

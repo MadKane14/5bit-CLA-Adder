@@ -1,0 +1,4 @@
+ERROR: Exception caught trying to open file D:\VLSI_Design M-25 Sem3\Course Project\Verilog\FPGA_CLA\FPGA_CLA.runs\impl_1/runme.log
+	Exception name: Error
+	Exception error code: 70
+	Exception message: Permission denied

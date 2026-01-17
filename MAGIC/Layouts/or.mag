@@ -1,0 +1,28 @@
+magic
+tech scmos
+timestamp 1731936518
+<< nwell >>
+rect 5 92 23 95
+rect 5 83 11 92
+<< metal1 >>
+rect 5 87 11 92
+rect -38 47 -32 51
+rect -38 39 -32 43
+rect 5 39 11 43
+rect 40 39 46 43
+rect 5 4 11 12
+use inverter  inverter_0
+timestamp 1731872184
+transform 1 0 11 0 1 51
+box 0 -47 29 41
+use nor  nor_0
+timestamp 1731920503
+transform 1 0 -83 0 1 53
+box 51 -49 88 46
+<< labels >>
+rlabel metal1 -37 48 -37 48 3 a
+rlabel metal1 -36 41 -36 41 3 b
+rlabel metal1 44 41 44 41 7 y
+rlabel metal1 8 88 8 88 1 vdd
+rlabel metal1 8 9 8 9 1 gnd
+<< end >>

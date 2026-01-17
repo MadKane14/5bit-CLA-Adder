@@ -1,0 +1,93 @@
+* 5-Bit CLA Subcircuit 
+.include Dff.sub
+.include OR.sub
+.include AND.sub
+.include XOR.sub
+.include 3_AND.sub
+.include 3_OR.sub
+.include 4_AND.sub
+.include 4_OR.sub
+.include 5_AND.sub
+.include 5_OR.sub
+
+.subckt CLA_5bit clk Cin A0 A1 A2 A3 A4 B0 B1 B2 B3 B4 S0 S1 S2 S3 S4 Cout A0d A1d A2d A3d A4d B0d B1d B2d B3d B4d Cind Vdd Gnd
+
+    xDff_Cin clk Cin Cind vdd gnd Dff
+    
+    xDff_A0 clk A0 A0d vdd gnd Dff
+    xDff_A1 clk A1 A1d vdd gnd Dff
+    xDff_A2 clk A2 A2d vdd gnd Dff
+    xDff_A3 clk A3 A3d vdd gnd Dff
+    xDff_A4 clk A4 A4d vdd gnd Dff
+
+    xDff_B0 clk B0 B0d vdd gnd Dff
+    xDff_B1 clk B1 B1d vdd gnd Dff
+    xDff_B2 clk B2 B2d vdd gnd Dff
+    xDff_B3 clk B3 B3d vdd gnd Dff
+    xDff_B4 clk B4 B4d vdd gnd Dff
+
+    xand0 A0d B0d G0 vdd gnd AND
+    xand1 A1d B1d G1 vdd gnd AND
+    xand2 A2d B2d G2 vdd gnd AND
+    xand3 A3d B3d G3 vdd gnd AND
+    xand4 A4d B4d G4 vdd gnd AND
+
+    xxor0 A0d B0d P0 vdd gnd XOR
+    xxor1 A1d B1d P1 vdd gnd XOR
+    xxor2 A2d B2d P2 vdd gnd XOR
+    xxor3 A3d B3d P3 vdd gnd XOR
+    xxor4 A4d B4d P4 vdd gnd XOR
+
+
+    xand_c0 P0 Cind P0Cin vdd gnd AND
+    xor_c0 G0 P0Cin C0 vdd gnd OR
+
+    x3and_c1 P1 P0 Cind P1P0Cin vdd gnd 3_AND
+    xand_c1 P1 G0 P1G0 vdd gnd AND
+    x3or_c1 P1G0 P1P0Cin G1 C1 vdd gnd 3_OR
+
+    x4and_c2 P2 P1 P0 Cind P2P1P0Cin vdd gnd 4_AND
+    x3and_c2 P2 P1 G0 P2P1G0 vdd gnd 3_AND
+    xand_c2 P2 G1 P2G1 vdd gnd AND
+    x4or_c2 P2G1 P2P1P0Cin P2P1G0 G2 C2 vdd gnd 4_OR
+
+    x5and_c3 P3 P2 P1 P0 Cind P3P2P1P0Cin vdd gnd 5_AND
+    x4and_c3 P3 P2 P1 G0 P3P2P1G0 vdd gnd 4_AND
+    x3and_c3 P3 P2 G1 P3P2G1 vdd gnd 3_AND
+    xand_c3 P3 G2 P3G2 vdd gnd AND
+    x5or_c3 P3G2 P3P2P1P0Cin P3P2P1G0 P3P2G1 G3 C3 vdd gnd 5_OR
+
+    
+    * Term 1: G4 
+    * Term 2: P4*G3
+    xterm2 P4 G3 T2 vdd gnd AND
+    * Term 3: P4*P3*G2
+    xterm3 P4 P3 G2 T3 vdd gnd 3_AND
+    * Term 4: P4*P3*P2*G1
+    xterm4 P4 P3 P2 G1 T4 vdd gnd 4_AND
+    * Term 5: P4*P3*P2*P1*G0
+    xterm5 P4 P3 P2 P1 G0 T5 vdd gnd 5_AND
+    
+    * Term 6: P4*P3*P2*P1*P0*Cin (Split into 5_AND + 2_AND)
+    xterm6_pre P3 P2 P1 P0 Cind T6_pre vdd gnd 5_AND
+    xterm6 P4 T6_pre T6 vdd gnd AND
+
+    * Combine T2, T3, T4, T5, T6 first
+    xsum_inter T2 T3 T4 T5 T6 T_sum vdd gnd 5_OR
+    * Combine G4 with T_sum for final result
+    xfinal_cout G4 T_sum Coutd vdd gnd OR
+
+    xxor_s0 P0 Cind S0d vdd gnd XOR 
+    xxor_s1 P1 C0 S1d vdd gnd XOR
+    xxor_s2 P2 C1 S2d vdd gnd XOR
+    xxor_s3 P3 C2 S3d vdd gnd XOR
+    xxor_s4 P4 C3 S4d vdd gnd XOR
+
+    xDff_Cout clk Coutd Cout vdd gnd Dff
+    xDff_S0 clk S0d S0 vdd gnd Dff
+    xDff_S1 clk S1d S1 vdd gnd Dff
+    xDff_S2 clk S2d S2 vdd gnd Dff
+    xDff_S3 clk S3d S3 vdd gnd Dff
+    xDff_S4 clk S4d S4 vdd gnd Dff
+
+.ends CLA_5bit

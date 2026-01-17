@@ -1,0 +1,34 @@
+* CMOS NAND GATE
+
+.include TSMC_180nm.txt
+.include 5_NOR.sub
+.param SUPPLY=1.8
+* .param LAMBDA=0.09u
+* .param width_P=20*LAMBDA
+* .param width_N=10*LAMBDA
+.global gnd vdd
+
+Vdd vdd gnd {SUPPLY}
+
+vinv v gnd pulse 0 1.8 0ns 0.3ns 0.3ns 80ns 160ns
+vinw w gnd pulse 0 1.8 0ns 0.3ns 0.3ns 40ns 80ns
+vinx x gnd pulse 0 1.8 0ns 0.3ns 0.3ns 20ns 40ns
+viny y gnd pulse 0 1.8 0ns 0.3ns 0.3ns 10ns 20ns
+vinz z gnd pulse 0 1.8 0ns 0.3ns 0.3ns 5ns 10ns
+
+xnor v w x y z out vdd gnd 5_NOR
+Cout out gnd 3.4f
+
+.tran 0.01n 160n 
+
+.control
+run
+* set background & foreground color
+set color0 = white 
+set color1 = black
+
+* plot v(x) v(y)
+plot v(x) 2+v(y) 4+v(z) 6+v(w) 8+v(v) 10+v(out)
+
+.endc
+.end

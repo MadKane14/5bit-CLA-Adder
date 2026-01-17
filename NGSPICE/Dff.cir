@@ -1,0 +1,43 @@
+* DFF with 180nm technology
+
+.include TSMC_180nm.txt
+.include Dff.sub
+.param SUPPLY=1.8
+* .param LAMBDA=0.09u
+* .param width_P=20*LAMBDA
+* .param width_N=10*LAMBDA
+.global gnd vdd
+
+Vdd vdd gnd {SUPPLY}
+
+vin x gnd pulse 0 1.8 1.9ns 0ns 0ns 2ns 4ns
+vinclk clk gnd pulse 0 1.8 0.9ns 0ns 0ns 0.5ns 1ns
+
+xdff clk x y vdd gnd Dff LAMBDA=0.09u width_N={10*LAMBDA} width_P={2*width_N}
+Cout y gnd 3.4f
+
+.tran 0.001n 5n 
+
+.control
+run
+* set background & foreground color
+set color0 = white 
+set color1 = black
+
+* plot v(x) v(y)
+set curplottitle="Madhur-Kankane-2024102061-3-DFF"
+plot v(clk) 4+v(y) 2+v(x)
+
+.endc
+
+.measure tran tpdr
++ trig v(clk) val={0.5*Supply} rise=2
++ targ v(y) val={0.5*Supply} rise=1
+
+.measure tran tpdf
++ trig v(clk) val={0.5*Supply} rise=4
++ targ v(y) val={0.5*Supply} fall=1
+
+.measure tran tpd param='(tpdr+tpdf)/2'
+
+.end

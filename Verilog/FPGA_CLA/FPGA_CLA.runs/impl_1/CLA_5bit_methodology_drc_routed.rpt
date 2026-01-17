@@ -1,0 +1,205 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.1 (win64) Build 6140274 Thu May 22 00:12:29 MDT 2025
+| Date         : Fri Dec  5 11:42:09 2025
+| Host         : DESKTOP-3VF7UER running 64-bit major release  (build 9200)
+| Command      : report_methodology -file CLA_5bit_methodology_drc_routed.rpt -pb CLA_5bit_methodology_drc_routed.pb -rpx CLA_5bit_methodology_drc_routed.rpx
+| Design       : CLA_5bit
+| Device       : xc7s50csga324-1
+| Speed File   : -1
+| Design State : Fully Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max checks: <unlimited>
+             Checks found: 34
++-----------+----------+--------------------------+--------+
+| Rule      | Severity | Description              | Checks |
++-----------+----------+--------------------------+--------+
+| TIMING-23 | Warning  | Combinational loop found | 34     |
++-----------+----------+--------------------------+--------+
+
+2. REPORT DETAILS
+-----------------
+TIMING-23#1 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between Cout_OBUF_inst_i_2/I2 and Cout_OBUF_inst_i_2/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#2 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between Cout_OBUF_inst_i_3/I0 and Cout_OBUF_inst_i_3/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#3 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between Cout_OBUF_inst_i_5/I1 and Cout_OBUF_inst_i_5/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#4 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between Cout_OBUF_inst_i_6/I1 and Cout_OBUF_inst_i_6/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#5 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between Cout_OBUF_inst_i_7/I2 and Cout_OBUF_inst_i_7/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#6 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between Cout_OBUF_inst_i_8/I2 and Cout_OBUF_inst_i_8/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#7 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between Sum_OBUF[0]_inst_i_2/I2 and Sum_OBUF[0]_inst_i_2/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#8 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between Sum_OBUF[0]_inst_i_3/I4 and Sum_OBUF[0]_inst_i_3/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#9 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between Sum_OBUF[0]_inst_i_4/I1 and Sum_OBUF[0]_inst_i_4/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#10 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between Sum_OBUF[0]_inst_i_5/I1 and Sum_OBUF[0]_inst_i_5/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#11 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between Sum_OBUF[0]_inst_i_6/I1 and Sum_OBUF[0]_inst_i_6/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#12 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between Sum_OBUF[0]_inst_i_7/I2 and Sum_OBUF[0]_inst_i_7/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#13 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between Sum_OBUF[0]_inst_i_8/I2 and Sum_OBUF[0]_inst_i_8/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#14 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between Sum_OBUF[0]_inst_i_9/I2 and Sum_OBUF[0]_inst_i_9/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#15 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between Sum_OBUF[1]_inst_i_1/I2 and Sum_OBUF[1]_inst_i_1/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#16 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between Sum_OBUF[1]_inst_i_2/I0 and Sum_OBUF[1]_inst_i_2/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#17 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between Sum_OBUF[2]_inst_i_1/I2 and Sum_OBUF[2]_inst_i_1/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#18 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between Sum_OBUF[2]_inst_i_10/I2 and Sum_OBUF[2]_inst_i_10/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#19 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between Sum_OBUF[2]_inst_i_11/I2 and Sum_OBUF[2]_inst_i_11/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#20 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between Sum_OBUF[2]_inst_i_12/I2 and Sum_OBUF[2]_inst_i_12/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#21 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between Sum_OBUF[2]_inst_i_2/I0 and Sum_OBUF[2]_inst_i_2/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#22 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between Sum_OBUF[2]_inst_i_5/I1 and Sum_OBUF[2]_inst_i_5/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#23 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between Sum_OBUF[2]_inst_i_6/I1 and Sum_OBUF[2]_inst_i_6/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#24 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between Sum_OBUF[2]_inst_i_7/I1 and Sum_OBUF[2]_inst_i_7/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#25 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between Sum_OBUF[2]_inst_i_8/I1 and Sum_OBUF[2]_inst_i_8/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#26 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between Sum_OBUF[2]_inst_i_9/I2 and Sum_OBUF[2]_inst_i_9/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#27 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between Sum_OBUF[3]_inst_i_1/I2 and Sum_OBUF[3]_inst_i_1/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#28 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between Sum_OBUF[3]_inst_i_2/I0 and Sum_OBUF[3]_inst_i_2/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#29 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between Sum_OBUF[3]_inst_i_5/I1 and Sum_OBUF[3]_inst_i_5/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#30 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between Sum_OBUF[3]_inst_i_6/I1 and Sum_OBUF[3]_inst_i_6/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#31 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between Sum_OBUF[3]_inst_i_7/I2 and Sum_OBUF[3]_inst_i_7/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#32 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between Sum_OBUF[3]_inst_i_8/I2 and Sum_OBUF[3]_inst_i_8/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#33 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between Sum_OBUF[4]_inst_i_1/I2 and Sum_OBUF[4]_inst_i_1/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#34 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between Sum_OBUF[4]_inst_i_2/I0 and Sum_OBUF[4]_inst_i_2/O to disable the timing loop
+Related violations: <none>
+
+

@@ -1,0 +1,9 @@
+.include 3_NOR.sub
+.include NOT.sub
+
+.subckt 3_OR x y z out vdd gnd l=0.09u w_n=0.9u w_p=1.8u
+
+xnor3 x y z nor_out vdd gnd 3_NOR lambda={l} width_N={w_n} width_P={w_p}
+xinv nor_out out vdd gnd NOT lambda={l} width_N={w_n} width_P={w_p}
+
+.ends 3_OR

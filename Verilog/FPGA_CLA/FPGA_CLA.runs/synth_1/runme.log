@@ -1,0 +1,607 @@
+
+*** Running vivado
+    with args -log CLA_5bit.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source CLA_5bit.tcl
+
+
+
+****** Vivado v2025.1 (64-bit)
+  **** SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+  **** IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+  **** SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+  **** Start of session at: Fri Dec  5 11:39:01 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source CLA_5bit.tcl -notrace
+create_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 496.633 ; gain = 212.941
+Command: read_checkpoint -auto_incremental -incremental {D:/VLSI_Design M-25 Sem3/Course Project/Verilog/FPGA_CLA/FPGA_CLA.srcs/utils_1/imports/synth_1/CLA_5bit.dcp}
+INFO: [Vivado 12-5825] Read reference checkpoint from D:/VLSI_Design M-25 Sem3/Course Project/Verilog/FPGA_CLA/FPGA_CLA.srcs/utils_1/imports/synth_1/CLA_5bit.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top CLA_5bit -part xc7s50csga324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7s50'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7s50'
+INFO: [Device 21-403] Loading part xc7s50csga324-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 15592
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1164.391 ; gain = 493.488
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'CLA_5bit' [D:/VLSI_Design M-25 Sem3/Course Project/Verilog/FPGA_CLA/FPGA_CLA.srcs/sources_1/new/CLA_5bit.v:36]
+INFO: [Synth 8-6157] synthesizing module 'D5ff' [D:/VLSI_Design M-25 Sem3/Course Project/Verilog/FPGA_CLA/FPGA_CLA.srcs/sources_1/new/CLA_5bit.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Dff' [D:/VLSI_Design M-25 Sem3/Course Project/Verilog/FPGA_CLA/FPGA_CLA.srcs/sources_1/new/CLA_5bit.v:15]
+INFO: [Synth 8-6157] synthesizing module 'DLatch' [D:/VLSI_Design M-25 Sem3/Course Project/Verilog/FPGA_CLA/FPGA_CLA.srcs/sources_1/new/CLA_5bit.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'DLatch' (0#1) [D:/VLSI_Design M-25 Sem3/Course Project/Verilog/FPGA_CLA/FPGA_CLA.srcs/sources_1/new/CLA_5bit.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Dff' (0#1) [D:/VLSI_Design M-25 Sem3/Course Project/Verilog/FPGA_CLA/FPGA_CLA.srcs/sources_1/new/CLA_5bit.v:15]
+INFO: [Synth 8-6155] done synthesizing module 'D5ff' (0#1) [D:/VLSI_Design M-25 Sem3/Course Project/Verilog/FPGA_CLA/FPGA_CLA.srcs/sources_1/new/CLA_5bit.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'CLA_5bit' (0#1) [D:/VLSI_Design M-25 Sem3/Course Project/Verilog/FPGA_CLA/FPGA_CLA.srcs/sources_1/new/CLA_5bit.v:36]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1270.402 ; gain = 599.500
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1270.402 ; gain = 599.500
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1270.402 ; gain = 599.500
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1270.402 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/VLSI_Design M-25 Sem3/Course Project/Verilog/FPGA_CLA/FPGA_CLA.srcs/constrs_1/new/cla_cons.xdc]
+Finished Parsing XDC File [D:/VLSI_Design M-25 Sem3/Course Project/Verilog/FPGA_CLA/FPGA_CLA.srcs/constrs_1/new/cla_cons.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/VLSI_Design M-25 Sem3/Course Project/Verilog/FPGA_CLA/FPGA_CLA.srcs/constrs_1/new/cla_cons.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/CLA_5bit_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/CLA_5bit_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1353.707 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1353.707 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 1353.707 ; gain = 682.805
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7s50csga324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 1353.707 ; gain = 682.805
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 1353.707 ; gain = 682.805
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1353.707 ; gain = 682.805
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      5 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 5     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 120 (col length:60)
+BRAMs: 150 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 1353.707 ; gain = 682.805
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 1485.562 ; gain = 814.660
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 1485.824 ; gain = 814.922
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+Found timing loop:
+     0: i_58/O (LUT2)
+      [D:/VLSI_Design M-25 Sem3/Course Project/Verilog/FPGA_CLA/FPGA_CLA.srcs/sources_1/new/CLA_5bit.v:8]
+     1: i_58/I1 (LUT2)
+     2: i_11/O (LUT2)
+      [D:/VLSI_Design M-25 Sem3/Course Project/Verilog/FPGA_CLA/FPGA_CLA.srcs/sources_1/new/CLA_5bit.v:8]
+     3: i_11/I0 (LUT2)
+     4: i_58/O (LUT2)
+      [D:/VLSI_Design M-25 Sem3/Course Project/Verilog/FPGA_CLA/FPGA_CLA.srcs/sources_1/new/CLA_5bit.v:8]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/VLSI_Design M-25 Sem3/Course Project/Verilog/FPGA_CLA/FPGA_CLA.srcs/sources_1/new/CLA_5bit.v:36]
+Inferred a: "set_disable_timing -from I1 -to O i_58"
+Found timing loop:
+     0: i_56/O (LUT3)
+      [D:/VLSI_Design M-25 Sem3/Course Project/Verilog/FPGA_CLA/FPGA_CLA.srcs/sources_1/new/CLA_5bit.v:8]
+     1: i_56/I2 (LUT3)
+     2: i_56/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/VLSI_Design M-25 Sem3/Course Project/Verilog/FPGA_CLA/FPGA_CLA.srcs/sources_1/new/CLA_5bit.v:36]
+Inferred a: "set_disable_timing -from I2 -to O i_56"
+Found timing loop:
+     0: i_57/O (LUT3)
+      [D:/VLSI_Design M-25 Sem3/Course Project/Verilog/FPGA_CLA/FPGA_CLA.srcs/sources_1/new/CLA_5bit.v:8]
+     1: i_57/I1 (LUT3)
+     2: i_57/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/VLSI_Design M-25 Sem3/Course Project/Verilog/FPGA_CLA/FPGA_CLA.srcs/sources_1/new/CLA_5bit.v:36]
+Inferred a: "set_disable_timing -from I1 -to O i_57"
+Found timing loop:
+     0: i_46/O (LUT3)
+      [D:/VLSI_Design M-25 Sem3/Course Project/Verilog/FPGA_CLA/FPGA_CLA.srcs/sources_1/new/CLA_5bit.v:8]
+     1: i_46/I2 (LUT3)
+     2: i_46/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/VLSI_Design M-25 Sem3/Course Project/Verilog/FPGA_CLA/FPGA_CLA.srcs/sources_1/new/CLA_5bit.v:36]
+Inferred a: "set_disable_timing -from I2 -to O i_46"
+Found timing loop:
+     0: i_47/O (LUT3)
+      [D:/VLSI_Design M-25 Sem3/Course Project/Verilog/FPGA_CLA/FPGA_CLA.srcs/sources_1/new/CLA_5bit.v:8]
+     1: i_47/I1 (LUT3)
+     2: i_47/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/VLSI_Design M-25 Sem3/Course Project/Verilog/FPGA_CLA/FPGA_CLA.srcs/sources_1/new/CLA_5bit.v:36]
+Inferred a: "set_disable_timing -from I1 -to O i_47"
+Found timing loop:
+     0: i_36/O (LUT3)
+      [D:/VLSI_Design M-25 Sem3/Course Project/Verilog/FPGA_CLA/FPGA_CLA.srcs/sources_1/new/CLA_5bit.v:8]
+     1: i_36/I2 (LUT3)
+     2: i_36/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/VLSI_Design M-25 Sem3/Course Project/Verilog/FPGA_CLA/FPGA_CLA.srcs/sources_1/new/CLA_5bit.v:36]
+Inferred a: "set_disable_timing -from I2 -to O i_36"
+Found timing loop:
+     0: i_37/O (LUT3)
+      [D:/VLSI_Design M-25 Sem3/Course Project/Verilog/FPGA_CLA/FPGA_CLA.srcs/sources_1/new/CLA_5bit.v:8]
+     1: i_37/I1 (LUT3)
+     2: i_37/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/VLSI_Design M-25 Sem3/Course Project/Verilog/FPGA_CLA/FPGA_CLA.srcs/sources_1/new/CLA_5bit.v:36]
+Inferred a: "set_disable_timing -from I1 -to O i_37"
+Found timing loop:
+     0: i_44/O (LUT3)
+      [D:/VLSI_Design M-25 Sem3/Course Project/Verilog/FPGA_CLA/FPGA_CLA.srcs/sources_1/new/CLA_5bit.v:8]
+     1: i_44/I2 (LUT3)
+     2: i_44/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/VLSI_Design M-25 Sem3/Course Project/Verilog/FPGA_CLA/FPGA_CLA.srcs/sources_1/new/CLA_5bit.v:36]
+Inferred a: "set_disable_timing -from I2 -to O i_44"
+Found timing loop:
+     0: i_45/O (LUT3)
+      [D:/VLSI_Design M-25 Sem3/Course Project/Verilog/FPGA_CLA/FPGA_CLA.srcs/sources_1/new/CLA_5bit.v:8]
+     1: i_45/I1 (LUT3)
+     2: i_45/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/VLSI_Design M-25 Sem3/Course Project/Verilog/FPGA_CLA/FPGA_CLA.srcs/sources_1/new/CLA_5bit.v:36]
+Inferred a: "set_disable_timing -from I1 -to O i_45"
+Found timing loop:
+     0: i_54/O (LUT3)
+      [D:/VLSI_Design M-25 Sem3/Course Project/Verilog/FPGA_CLA/FPGA_CLA.srcs/sources_1/new/CLA_5bit.v:8]
+     1: i_54/I2 (LUT3)
+     2: i_54/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/VLSI_Design M-25 Sem3/Course Project/Verilog/FPGA_CLA/FPGA_CLA.srcs/sources_1/new/CLA_5bit.v:36]
+Inferred a: "set_disable_timing -from I2 -to O i_54"
+Found timing loop:
+     0: i_55/O (LUT3)
+      [D:/VLSI_Design M-25 Sem3/Course Project/Verilog/FPGA_CLA/FPGA_CLA.srcs/sources_1/new/CLA_5bit.v:8]
+     1: i_55/I1 (LUT3)
+     2: i_55/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/VLSI_Design M-25 Sem3/Course Project/Verilog/FPGA_CLA/FPGA_CLA.srcs/sources_1/new/CLA_5bit.v:36]
+Inferred a: "set_disable_timing -from I1 -to O i_55"
+Found timing loop:
+     0: i_52/O (LUT3)
+      [D:/VLSI_Design M-25 Sem3/Course Project/Verilog/FPGA_CLA/FPGA_CLA.srcs/sources_1/new/CLA_5bit.v:8]
+     1: i_52/I2 (LUT3)
+     2: i_52/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/VLSI_Design M-25 Sem3/Course Project/Verilog/FPGA_CLA/FPGA_CLA.srcs/sources_1/new/CLA_5bit.v:36]
+Inferred a: "set_disable_timing -from I2 -to O i_52"
+Found timing loop:
+     0: i_53/O (LUT3)
+      [D:/VLSI_Design M-25 Sem3/Course Project/Verilog/FPGA_CLA/FPGA_CLA.srcs/sources_1/new/CLA_5bit.v:8]
+     1: i_53/I1 (LUT3)
+     2: i_53/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/VLSI_Design M-25 Sem3/Course Project/Verilog/FPGA_CLA/FPGA_CLA.srcs/sources_1/new/CLA_5bit.v:36]
+Inferred a: "set_disable_timing -from I1 -to O i_53"
+Found timing loop:
+     0: i_42/O (LUT3)
+      [D:/VLSI_Design M-25 Sem3/Course Project/Verilog/FPGA_CLA/FPGA_CLA.srcs/sources_1/new/CLA_5bit.v:8]
+     1: i_42/I2 (LUT3)
+     2: i_42/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/VLSI_Design M-25 Sem3/Course Project/Verilog/FPGA_CLA/FPGA_CLA.srcs/sources_1/new/CLA_5bit.v:36]
+Inferred a: "set_disable_timing -from I2 -to O i_42"
+Found timing loop:
+     0: i_43/O (LUT3)
+      [D:/VLSI_Design M-25 Sem3/Course Project/Verilog/FPGA_CLA/FPGA_CLA.srcs/sources_1/new/CLA_5bit.v:8]
+     1: i_43/I1 (LUT3)
+     2: i_43/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/VLSI_Design M-25 Sem3/Course Project/Verilog/FPGA_CLA/FPGA_CLA.srcs/sources_1/new/CLA_5bit.v:36]
+Inferred a: "set_disable_timing -from I1 -to O i_43"
+Found timing loop:
+     0: i_50/O (LUT3)
+      [D:/VLSI_Design M-25 Sem3/Course Project/Verilog/FPGA_CLA/FPGA_CLA.srcs/sources_1/new/CLA_5bit.v:8]
+     1: i_50/I2 (LUT3)
+     2: i_50/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/VLSI_Design M-25 Sem3/Course Project/Verilog/FPGA_CLA/FPGA_CLA.srcs/sources_1/new/CLA_5bit.v:36]
+Inferred a: "set_disable_timing -from I2 -to O i_50"
+Found timing loop:
+     0: i_51/O (LUT3)
+      [D:/VLSI_Design M-25 Sem3/Course Project/Verilog/FPGA_CLA/FPGA_CLA.srcs/sources_1/new/CLA_5bit.v:8]
+     1: i_51/I1 (LUT3)
+     2: i_51/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/VLSI_Design M-25 Sem3/Course Project/Verilog/FPGA_CLA/FPGA_CLA.srcs/sources_1/new/CLA_5bit.v:36]
+Inferred a: "set_disable_timing -from I1 -to O i_51"
+Found timing loop:
+     0: i_40/O (LUT3)
+      [D:/VLSI_Design M-25 Sem3/Course Project/Verilog/FPGA_CLA/FPGA_CLA.srcs/sources_1/new/CLA_5bit.v:8]
+     1: i_40/I2 (LUT3)
+     2: i_40/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/VLSI_Design M-25 Sem3/Course Project/Verilog/FPGA_CLA/FPGA_CLA.srcs/sources_1/new/CLA_5bit.v:36]
+Inferred a: "set_disable_timing -from I2 -to O i_40"
+Found timing loop:
+     0: i_41/O (LUT3)
+      [D:/VLSI_Design M-25 Sem3/Course Project/Verilog/FPGA_CLA/FPGA_CLA.srcs/sources_1/new/CLA_5bit.v:8]
+     1: i_41/I1 (LUT3)
+     2: i_41/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/VLSI_Design M-25 Sem3/Course Project/Verilog/FPGA_CLA/FPGA_CLA.srcs/sources_1/new/CLA_5bit.v:36]
+Inferred a: "set_disable_timing -from I1 -to O i_41"
+Found timing loop:
+     0: i_48/O (LUT3)
+      [D:/VLSI_Design M-25 Sem3/Course Project/Verilog/FPGA_CLA/FPGA_CLA.srcs/sources_1/new/CLA_5bit.v:8]
+     1: i_48/I2 (LUT3)
+     2: i_48/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/VLSI_Design M-25 Sem3/Course Project/Verilog/FPGA_CLA/FPGA_CLA.srcs/sources_1/new/CLA_5bit.v:36]
+Inferred a: "set_disable_timing -from I2 -to O i_48"
+Found timing loop:
+     0: i_49/O (LUT3)
+      [D:/VLSI_Design M-25 Sem3/Course Project/Verilog/FPGA_CLA/FPGA_CLA.srcs/sources_1/new/CLA_5bit.v:8]
+     1: i_49/I1 (LUT3)
+     2: i_49/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/VLSI_Design M-25 Sem3/Course Project/Verilog/FPGA_CLA/FPGA_CLA.srcs/sources_1/new/CLA_5bit.v:36]
+Inferred a: "set_disable_timing -from I1 -to O i_49"
+Found timing loop:
+     0: i_38/O (LUT3)
+      [D:/VLSI_Design M-25 Sem3/Course Project/Verilog/FPGA_CLA/FPGA_CLA.srcs/sources_1/new/CLA_5bit.v:8]
+     1: i_38/I2 (LUT3)
+     2: i_38/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/VLSI_Design M-25 Sem3/Course Project/Verilog/FPGA_CLA/FPGA_CLA.srcs/sources_1/new/CLA_5bit.v:36]
+Inferred a: "set_disable_timing -from I2 -to O i_38"
+Found timing loop:
+     0: i_39/O (LUT3)
+      [D:/VLSI_Design M-25 Sem3/Course Project/Verilog/FPGA_CLA/FPGA_CLA.srcs/sources_1/new/CLA_5bit.v:8]
+     1: i_39/I1 (LUT3)
+     2: i_39/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/VLSI_Design M-25 Sem3/Course Project/Verilog/FPGA_CLA/FPGA_CLA.srcs/sources_1/new/CLA_5bit.v:36]
+Inferred a: "set_disable_timing -from I1 -to O i_39"
+Found timing loop:
+     0: i_23/O (LUT3)
+      [D:/VLSI_Design M-25 Sem3/Course Project/Verilog/FPGA_CLA/FPGA_CLA.srcs/sources_1/new/CLA_5bit.v:8]
+     1: i_23/I2 (LUT3)
+     2: i_23/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/VLSI_Design M-25 Sem3/Course Project/Verilog/FPGA_CLA/FPGA_CLA.srcs/sources_1/new/CLA_5bit.v:36]
+Inferred a: "set_disable_timing -from I2 -to O i_23"
+Found timing loop:
+     0: i_24/O (LUT3)
+      [D:/VLSI_Design M-25 Sem3/Course Project/Verilog/FPGA_CLA/FPGA_CLA.srcs/sources_1/new/CLA_5bit.v:8]
+     1: i_24/I2 (LUT3)
+     2: i_24/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/VLSI_Design M-25 Sem3/Course Project/Verilog/FPGA_CLA/FPGA_CLA.srcs/sources_1/new/CLA_5bit.v:36]
+Inferred a: "set_disable_timing -from I2 -to O i_24"
+Found timing loop:
+     0: i_62/O (LUT2)
+      [D:/VLSI_Design M-25 Sem3/Course Project/Verilog/FPGA_CLA/FPGA_CLA.srcs/sources_1/new/CLA_5bit.v:8]
+     1: i_62/I1 (LUT2)
+     2: i_31/O (LUT2)
+      [D:/VLSI_Design M-25 Sem3/Course Project/Verilog/FPGA_CLA/FPGA_CLA.srcs/sources_1/new/CLA_5bit.v:8]
+     3: i_31/I0 (LUT2)
+     4: i_62/O (LUT2)
+      [D:/VLSI_Design M-25 Sem3/Course Project/Verilog/FPGA_CLA/FPGA_CLA.srcs/sources_1/new/CLA_5bit.v:8]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/VLSI_Design M-25 Sem3/Course Project/Verilog/FPGA_CLA/FPGA_CLA.srcs/sources_1/new/CLA_5bit.v:36]
+Inferred a: "set_disable_timing -from I1 -to O i_62"
+Found timing loop:
+     0: i_25/O (LUT3)
+      [D:/VLSI_Design M-25 Sem3/Course Project/Verilog/FPGA_CLA/FPGA_CLA.srcs/sources_1/new/CLA_5bit.v:8]
+     1: i_25/I2 (LUT3)
+     2: i_25/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/VLSI_Design M-25 Sem3/Course Project/Verilog/FPGA_CLA/FPGA_CLA.srcs/sources_1/new/CLA_5bit.v:36]
+Inferred a: "set_disable_timing -from I2 -to O i_25"
+Found timing loop:
+     0: i_61/O (LUT2)
+      [D:/VLSI_Design M-25 Sem3/Course Project/Verilog/FPGA_CLA/FPGA_CLA.srcs/sources_1/new/CLA_5bit.v:8]
+     1: i_61/I1 (LUT2)
+     2: i_30/O (LUT2)
+      [D:/VLSI_Design M-25 Sem3/Course Project/Verilog/FPGA_CLA/FPGA_CLA.srcs/sources_1/new/CLA_5bit.v:8]
+     3: i_30/I0 (LUT2)
+     4: i_61/O (LUT2)
+      [D:/VLSI_Design M-25 Sem3/Course Project/Verilog/FPGA_CLA/FPGA_CLA.srcs/sources_1/new/CLA_5bit.v:8]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/VLSI_Design M-25 Sem3/Course Project/Verilog/FPGA_CLA/FPGA_CLA.srcs/sources_1/new/CLA_5bit.v:36]
+Inferred a: "set_disable_timing -from I1 -to O i_61"
+Found timing loop:
+     0: i_26/O (LUT3)
+      [D:/VLSI_Design M-25 Sem3/Course Project/Verilog/FPGA_CLA/FPGA_CLA.srcs/sources_1/new/CLA_5bit.v:8]
+     1: i_26/I2 (LUT3)
+     2: i_26/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/VLSI_Design M-25 Sem3/Course Project/Verilog/FPGA_CLA/FPGA_CLA.srcs/sources_1/new/CLA_5bit.v:36]
+Inferred a: "set_disable_timing -from I2 -to O i_26"
+Found timing loop:
+     0: i_60/O (LUT2)
+      [D:/VLSI_Design M-25 Sem3/Course Project/Verilog/FPGA_CLA/FPGA_CLA.srcs/sources_1/new/CLA_5bit.v:8]
+     1: i_60/I1 (LUT2)
+     2: i_29/O (LUT2)
+      [D:/VLSI_Design M-25 Sem3/Course Project/Verilog/FPGA_CLA/FPGA_CLA.srcs/sources_1/new/CLA_5bit.v:8]
+     3: i_29/I0 (LUT2)
+     4: i_60/O (LUT2)
+      [D:/VLSI_Design M-25 Sem3/Course Project/Verilog/FPGA_CLA/FPGA_CLA.srcs/sources_1/new/CLA_5bit.v:8]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/VLSI_Design M-25 Sem3/Course Project/Verilog/FPGA_CLA/FPGA_CLA.srcs/sources_1/new/CLA_5bit.v:36]
+Inferred a: "set_disable_timing -from I1 -to O i_60"
+Found timing loop:
+     0: i_27/O (LUT3)
+      [D:/VLSI_Design M-25 Sem3/Course Project/Verilog/FPGA_CLA/FPGA_CLA.srcs/sources_1/new/CLA_5bit.v:8]
+     1: i_27/I2 (LUT3)
+     2: i_27/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/VLSI_Design M-25 Sem3/Course Project/Verilog/FPGA_CLA/FPGA_CLA.srcs/sources_1/new/CLA_5bit.v:36]
+Inferred a: "set_disable_timing -from I2 -to O i_27"
+Found timing loop:
+     0: i_59/O (LUT2)
+      [D:/VLSI_Design M-25 Sem3/Course Project/Verilog/FPGA_CLA/FPGA_CLA.srcs/sources_1/new/CLA_5bit.v:8]
+     1: i_59/I1 (LUT2)
+     2: i_28/O (LUT2)
+      [D:/VLSI_Design M-25 Sem3/Course Project/Verilog/FPGA_CLA/FPGA_CLA.srcs/sources_1/new/CLA_5bit.v:8]
+     3: i_28/I0 (LUT2)
+     4: i_59/O (LUT2)
+      [D:/VLSI_Design M-25 Sem3/Course Project/Verilog/FPGA_CLA/FPGA_CLA.srcs/sources_1/new/CLA_5bit.v:8]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/VLSI_Design M-25 Sem3/Course Project/Verilog/FPGA_CLA/FPGA_CLA.srcs/sources_1/new/CLA_5bit.v:36]
+Inferred a: "set_disable_timing -from I1 -to O i_59"
+Found timing loop:
+     0: i_63/O (LUT2)
+      [D:/VLSI_Design M-25 Sem3/Course Project/Verilog/FPGA_CLA/FPGA_CLA.srcs/sources_1/new/CLA_5bit.v:8]
+     1: i_63/I1 (LUT2)
+     2: i_33/O (LUT2)
+      [D:/VLSI_Design M-25 Sem3/Course Project/Verilog/FPGA_CLA/FPGA_CLA.srcs/sources_1/new/CLA_5bit.v:8]
+     3: i_33/I0 (LUT2)
+     4: i_63/O (LUT2)
+      [D:/VLSI_Design M-25 Sem3/Course Project/Verilog/FPGA_CLA/FPGA_CLA.srcs/sources_1/new/CLA_5bit.v:8]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/VLSI_Design M-25 Sem3/Course Project/Verilog/FPGA_CLA/FPGA_CLA.srcs/sources_1/new/CLA_5bit.v:36]
+Inferred a: "set_disable_timing -from I1 -to O i_63"
+Found timing loop:
+     0: i_35/O (LUT3)
+      [D:/VLSI_Design M-25 Sem3/Course Project/Verilog/FPGA_CLA/FPGA_CLA.srcs/sources_1/new/CLA_5bit.v:8]
+     1: i_35/I2 (LUT3)
+     2: i_35/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/VLSI_Design M-25 Sem3/Course Project/Verilog/FPGA_CLA/FPGA_CLA.srcs/sources_1/new/CLA_5bit.v:36]
+Inferred a: "set_disable_timing -from I2 -to O i_35"
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 1495.613 ; gain = 824.711
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:37 ; elapsed = 00:00:40 . Memory (MB): peak = 1730.340 ; gain = 1059.438
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:37 ; elapsed = 00:00:40 . Memory (MB): peak = 1730.340 ; gain = 1059.438
+---------------------------------------------------------------------------------
+Found timing loop:
+     0: \Sum_OBUF[0]_inst_i_7 /O (LUT3)
+      [D:/VLSI_Design M-25 Sem3/Course Project/Verilog/FPGA_CLA/FPGA_CLA.srcs/sources_1/new/CLA_5bit.v:8]
+     1: \Sum_OBUF[0]_inst_i_7 /I2 (LUT3)
+     2: \Sum_OBUF[0]_inst_i_7 /O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/VLSI_Design M-25 Sem3/Course Project/Verilog/FPGA_CLA/FPGA_CLA.srcs/sources_1/new/CLA_5bit.v:36]
+Inferred a: "set_disable_timing -from I2 -to O \Sum_OBUF[0]_inst_i_7 "
+Found timing loop:
+     0: \Sum_OBUF[2]_inst_i_11 /O (LUT3)
+      [D:/VLSI_Design M-25 Sem3/Course Project/Verilog/FPGA_CLA/FPGA_CLA.srcs/sources_1/new/CLA_5bit.v:8]
+     1: \Sum_OBUF[2]_inst_i_11 /I2 (LUT3)
+     2: \Sum_OBUF[2]_inst_i_11 /O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/VLSI_Design M-25 Sem3/Course Project/Verilog/FPGA_CLA/FPGA_CLA.srcs/sources_1/new/CLA_5bit.v:36]
+Inferred a: "set_disable_timing -from I2 -to O \Sum_OBUF[2]_inst_i_11 "
+Found timing loop:
+     0: \Sum_OBUF[2]_inst_i_9 /O (LUT3)
+      [D:/VLSI_Design M-25 Sem3/Course Project/Verilog/FPGA_CLA/FPGA_CLA.srcs/sources_1/new/CLA_5bit.v:8]
+     1: \Sum_OBUF[2]_inst_i_9 /I2 (LUT3)
+     2: \Sum_OBUF[2]_inst_i_9 /O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/VLSI_Design M-25 Sem3/Course Project/Verilog/FPGA_CLA/FPGA_CLA.srcs/sources_1/new/CLA_5bit.v:36]
+Inferred a: "set_disable_timing -from I2 -to O \Sum_OBUF[2]_inst_i_9 "
+Found timing loop:
+     0: \Sum_OBUF[3]_inst_i_7 /O (LUT3)
+      [D:/VLSI_Design M-25 Sem3/Course Project/Verilog/FPGA_CLA/FPGA_CLA.srcs/sources_1/new/CLA_5bit.v:8]
+     1: \Sum_OBUF[3]_inst_i_7 /I2 (LUT3)
+     2: \Sum_OBUF[3]_inst_i_7 /O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/VLSI_Design M-25 Sem3/Course Project/Verilog/FPGA_CLA/FPGA_CLA.srcs/sources_1/new/CLA_5bit.v:36]
+Inferred a: "set_disable_timing -from I2 -to O \Sum_OBUF[3]_inst_i_7 "
+Found timing loop:
+     0: Cout_OBUF_inst_i_7/O (LUT3)
+      [D:/VLSI_Design M-25 Sem3/Course Project/Verilog/FPGA_CLA/FPGA_CLA.srcs/sources_1/new/CLA_5bit.v:8]
+     1: Cout_OBUF_inst_i_7/I2 (LUT3)
+     2: Cout_OBUF_inst_i_7/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/VLSI_Design M-25 Sem3/Course Project/Verilog/FPGA_CLA/FPGA_CLA.srcs/sources_1/new/CLA_5bit.v:36]
+Inferred a: "set_disable_timing -from I2 -to O Cout_OBUF_inst_i_7"
+Found timing loop:
+     0: \Sum_OBUF[0]_inst_i_8 /O (LUT3)
+      [D:/VLSI_Design M-25 Sem3/Course Project/Verilog/FPGA_CLA/FPGA_CLA.srcs/sources_1/new/CLA_5bit.v:8]
+     1: \Sum_OBUF[0]_inst_i_8 /I2 (LUT3)
+     2: \Sum_OBUF[0]_inst_i_8 /O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/VLSI_Design M-25 Sem3/Course Project/Verilog/FPGA_CLA/FPGA_CLA.srcs/sources_1/new/CLA_5bit.v:36]
+Inferred a: "set_disable_timing -from I2 -to O \Sum_OBUF[0]_inst_i_8 "
+Found timing loop:
+     0: \Sum_OBUF[2]_inst_i_12 /O (LUT3)
+      [D:/VLSI_Design M-25 Sem3/Course Project/Verilog/FPGA_CLA/FPGA_CLA.srcs/sources_1/new/CLA_5bit.v:8]
+     1: \Sum_OBUF[2]_inst_i_12 /I2 (LUT3)
+     2: \Sum_OBUF[2]_inst_i_12 /O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/VLSI_Design M-25 Sem3/Course Project/Verilog/FPGA_CLA/FPGA_CLA.srcs/sources_1/new/CLA_5bit.v:36]
+Inferred a: "set_disable_timing -from I2 -to O \Sum_OBUF[2]_inst_i_12 "
+Found timing loop:
+     0: \Sum_OBUF[2]_inst_i_10 /O (LUT3)
+      [D:/VLSI_Design M-25 Sem3/Course Project/Verilog/FPGA_CLA/FPGA_CLA.srcs/sources_1/new/CLA_5bit.v:8]
+     1: \Sum_OBUF[2]_inst_i_10 /I2 (LUT3)
+     2: \Sum_OBUF[2]_inst_i_10 /O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/VLSI_Design M-25 Sem3/Course Project/Verilog/FPGA_CLA/FPGA_CLA.srcs/sources_1/new/CLA_5bit.v:36]
+Inferred a: "set_disable_timing -from I2 -to O \Sum_OBUF[2]_inst_i_10 "
+Found timing loop:
+     0: \Sum_OBUF[3]_inst_i_8 /O (LUT3)
+      [D:/VLSI_Design M-25 Sem3/Course Project/Verilog/FPGA_CLA/FPGA_CLA.srcs/sources_1/new/CLA_5bit.v:8]
+     1: \Sum_OBUF[3]_inst_i_8 /I2 (LUT3)
+     2: \Sum_OBUF[3]_inst_i_8 /O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/VLSI_Design M-25 Sem3/Course Project/Verilog/FPGA_CLA/FPGA_CLA.srcs/sources_1/new/CLA_5bit.v:36]
+Inferred a: "set_disable_timing -from I2 -to O \Sum_OBUF[3]_inst_i_8 "
+Found timing loop:
+     0: Cout_OBUF_inst_i_8/O (LUT3)
+      [D:/VLSI_Design M-25 Sem3/Course Project/Verilog/FPGA_CLA/FPGA_CLA.srcs/sources_1/new/CLA_5bit.v:8]
+     1: Cout_OBUF_inst_i_8/I2 (LUT3)
+     2: Cout_OBUF_inst_i_8/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/VLSI_Design M-25 Sem3/Course Project/Verilog/FPGA_CLA/FPGA_CLA.srcs/sources_1/new/CLA_5bit.v:36]
+Inferred a: "set_disable_timing -from I2 -to O Cout_OBUF_inst_i_8"
+Found timing loop:
+     0: \Sum_OBUF[0]_inst_i_9 /O (LUT3)
+      [D:/VLSI_Design M-25 Sem3/Course Project/Verilog/FPGA_CLA/FPGA_CLA.srcs/sources_1/new/CLA_5bit.v:8]
+     1: \Sum_OBUF[0]_inst_i_9 /I2 (LUT3)
+     2: \Sum_OBUF[0]_inst_i_9 /O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/VLSI_Design M-25 Sem3/Course Project/Verilog/FPGA_CLA/FPGA_CLA.srcs/sources_1/new/CLA_5bit.v:36]
+Inferred a: "set_disable_timing -from I2 -to O \Sum_OBUF[0]_inst_i_9 "
+Found timing loop:
+     0: \Sum_OBUF[0]_inst_i_3 /O (LUT5)
+      [D:/VLSI_Design M-25 Sem3/Course Project/Verilog/FPGA_CLA/FPGA_CLA.srcs/sources_1/new/CLA_5bit.v:8]
+     1: \Sum_OBUF[0]_inst_i_3 /I4 (LUT5)
+     2: \Sum_OBUF[0]_inst_i_3 /O (LUT5)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/VLSI_Design M-25 Sem3/Course Project/Verilog/FPGA_CLA/FPGA_CLA.srcs/sources_1/new/CLA_5bit.v:36]
+Inferred a: "set_disable_timing -from I4 -to O \Sum_OBUF[0]_inst_i_3 "
+Found timing loop:
+     0: \Sum_OBUF[1]_inst_i_2 /O (LUT3)
+      [D:/VLSI_Design M-25 Sem3/Course Project/Verilog/FPGA_CLA/FPGA_CLA.srcs/sources_1/new/CLA_5bit.v:8]
+     1: \Sum_OBUF[1]_inst_i_2 /I0 (LUT3)
+     2: \Sum_OBUF[1]_inst_i_2 /O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/VLSI_Design M-25 Sem3/Course Project/Verilog/FPGA_CLA/FPGA_CLA.srcs/sources_1/new/CLA_5bit.v:36]
+Inferred a: "set_disable_timing -from I0 -to O \Sum_OBUF[1]_inst_i_2 "
+Found timing loop:
+     0: \Sum_OBUF[2]_inst_i_2 /O (LUT6)
+      [D:/VLSI_Design M-25 Sem3/Course Project/Verilog/FPGA_CLA/FPGA_CLA.srcs/sources_1/new/CLA_5bit.v:8]
+     1: \Sum_OBUF[2]_inst_i_2 /I0 (LUT6)
+     2: \Sum_OBUF[2]_inst_i_2 /O (LUT6)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/VLSI_Design M-25 Sem3/Course Project/Verilog/FPGA_CLA/FPGA_CLA.srcs/sources_1/new/CLA_5bit.v:36]
+Inferred a: "set_disable_timing -from I0 -to O \Sum_OBUF[2]_inst_i_2 "
+Found timing loop:
+     0: \Sum_OBUF[3]_inst_i_2 /O (LUT6)
+      [D:/VLSI_Design M-25 Sem3/Course Project/Verilog/FPGA_CLA/FPGA_CLA.srcs/sources_1/new/CLA_5bit.v:8]
+     1: \Sum_OBUF[3]_inst_i_2 /I0 (LUT6)
+     2: \Sum_OBUF[3]_inst_i_2 /O (LUT6)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/VLSI_Design M-25 Sem3/Course Project/Verilog/FPGA_CLA/FPGA_CLA.srcs/sources_1/new/CLA_5bit.v:36]
+Inferred a: "set_disable_timing -from I0 -to O \Sum_OBUF[3]_inst_i_2 "
+Found timing loop:
+     0: \Sum_OBUF[4]_inst_i_2 /O (LUT3)
+      [D:/VLSI_Design M-25 Sem3/Course Project/Verilog/FPGA_CLA/FPGA_CLA.srcs/sources_1/new/CLA_5bit.v:8]
+     1: \Sum_OBUF[4]_inst_i_2 /I0 (LUT3)
+     2: \Sum_OBUF[4]_inst_i_2 /O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/VLSI_Design M-25 Sem3/Course Project/Verilog/FPGA_CLA/FPGA_CLA.srcs/sources_1/new/CLA_5bit.v:36]
+Inferred a: "set_disable_timing -from I0 -to O \Sum_OBUF[4]_inst_i_2 "
+Found timing loop:
+     0: Cout_OBUF_inst_i_3/O (LUT5)
+      [D:/VLSI_Design M-25 Sem3/Course Project/Verilog/FPGA_CLA/FPGA_CLA.srcs/sources_1/new/CLA_5bit.v:8]
+     1: Cout_OBUF_inst_i_3/I0 (LUT5)
+     2: Cout_OBUF_inst_i_3/O (LUT5)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/VLSI_Design M-25 Sem3/Course Project/Verilog/FPGA_CLA/FPGA_CLA.srcs/sources_1/new/CLA_5bit.v:36]
+Inferred a: "set_disable_timing -from I0 -to O Cout_OBUF_inst_i_3"
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:37 ; elapsed = 00:00:40 . Memory (MB): peak = 1730.340 ; gain = 1059.438
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:37 ; elapsed = 00:00:40 . Memory (MB): peak = 1730.340 ; gain = 1059.438
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:37 ; elapsed = 00:00:40 . Memory (MB): peak = 1730.340 ; gain = 1059.438
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:37 ; elapsed = 00:00:40 . Memory (MB): peak = 1730.340 ; gain = 1059.438
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT2 |     1|
+|2     |LUT3 |    34|
+|3     |LUT5 |     5|
+|4     |LUT6 |     4|
+|5     |IBUF |    12|
+|6     |OBUF |     6|
++------+-----+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:37 ; elapsed = 00:00:40 . Memory (MB): peak = 1730.340 ; gain = 1059.438
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 51 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:25 ; elapsed = 00:00:38 . Memory (MB): peak = 1730.340 ; gain = 976.133
+Synthesis Optimization Complete : Time (s): cpu = 00:00:37 ; elapsed = 00:00:41 . Memory (MB): peak = 1730.340 ; gain = 1059.438
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1739.477 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1743.156 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: ee45cd73
+INFO: [Common 17-83] Releasing license: Synthesis
+27 Infos, 1 Warnings, 51 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:41 ; elapsed = 00:00:48 . Memory (MB): peak = 1743.156 ; gain = 1241.828
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1743.156 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/VLSI_Design M-25 Sem3/Course Project/Verilog/FPGA_CLA/FPGA_CLA.runs/synth_1/CLA_5bit.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file CLA_5bit_utilization_synth.rpt -pb CLA_5bit_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Dec  5 11:40:28 2025...

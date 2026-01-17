@@ -1,0 +1,9 @@
+.include 3_NAND.sub
+.include NOT.sub
+
+.subckt 3_AND x y z out vdd gnd l=0.09u w_n=0.9u w_p=1.8u
+
+xand3 x y z nand_out vdd gnd 3_NAND lambda={l} width_N={w_n} width_P={w_p}
+xinv nand_out out vdd gnd NOT lambda={l} width_N={w_n} width_P={w_p}
+
+.ends 3_AND

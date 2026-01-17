@@ -1,0 +1,68 @@
+* SPICE3 file created from xor.ext - technology: scmos
+* Modified for Stability - XOR Gate
+.include TSMC_180nm.txt
+
+Vdd Vdd 0 1.8
+* Input A (Period 10ns)
+Va a 0 PULSE(0 1.8 0 0n 0n 5n 10n)
+* Input B (Period 20ns) - Double the period to show all logic states (00, 01, 10, 11)
+Vb b 0 PULSE(0 1.8 0 0n 0n 10n 20n)
+
+M1000 anot a Vdd Vdd CMOSP w=1.8u l=0.18u
+M1001 anot a 0   0   CMOSN w=0.9u l=0.18u
+
+M1002 bnot b Vdd Vdd CMOSP w=1.8u l=0.18u
+M1003 bnot b 0   0   CMOSN w=0.9u l=0.18u
+
+M1004 y node Vdd Vdd CMOSP w=1.8u l=0.18u
+M1005 y node 0   0   CMOSN w=0.9u l=0.18u
+
+M1006 node a b    0 CMOSN w=0.9u l=0.18u
+M1007 node anot bnot 0 CMOSN w=0.9u l=0.18u
+
+C0 b a 0.05fF
+C1 y 0 0.13fF
+C2 a Vdd 0.06fF
+C3 Vdd y 0.28fF
+C4 node Vdd 0.06fF
+C5 node y 0.05fF
+C6 anot 0 0.13fF
+C7 node 0 0.09fF
+C8 bnot 0 0.13fF
+C9 anot 0 0.08fF
+C10 node bnot 0.23fF
+C11 node anot 0.03fF
+C12 anot bnot 0.05fF
+C13 node b 0.22fF
+C14 b bnot 0.05fF
+C15 node Vdd 0.04fF
+C16 Vdd bnot 0.28fF
+C17 Vdd b 0.06fF
+C18 0 Vdd 0.40fF
+C19 node a 0.04fF
+C20 anot a 0.05fF
+C21 anot Vdd 0.36fF
+C22 0 0 0.17fF
+C23 y 0 0.12fF
+C24 node 0 1.96fF
+C25 Vdd 0 1.21fF
+C26 0 0 0.17fF
+C27 bnot 0 0.30fF
+C28 b 0 0.43fF
+C29 Vdd 0 1.21fF
+C30 0 0 0.17fF
+C31 anot 0 0.12fF
+C32 a 0 0.30fF
+C33 Vdd 0 1.21fF
+
+.tran 0.1n 40n
+
+.control
+set color0 = white
+set color1 = black
+
+run
+set curplottitle="Madhur-Kankane-2024102061-3-XOR"
+plot V(a) 2+V(b) 4+V(y)
+
+.endc

@@ -1,0 +1,519 @@
+magic
+tech scmos
+timestamp 1764780420
+<< error_p >>
+rect 548 -479 550 -469
+rect 577 -478 578 -477
+rect 564 -479 578 -478
+rect 577 -487 578 -479
+rect 548 -640 549 -630
+rect 567 -702 568 -692
+rect 557 -717 559 -707
+<< error_s >>
+rect 756 326 757 328
+rect 756 325 759 326
+rect 282 16 283 18
+rect 283 15 285 16
+rect 548 -132 549 -122
+rect 548 -244 549 -234
+rect 627 -283 628 -273
+rect 548 -354 550 -344
+rect 597 -352 598 -351
+rect 584 -353 598 -352
+rect 597 -361 598 -353
+rect 627 -396 628 -386
+rect 607 -407 608 -397
+rect 607 -532 608 -522
+rect 627 -524 628 -514
+rect 587 -545 588 -535
+rect 627 -639 628 -638
+rect 614 -640 628 -639
+rect 627 -648 628 -640
+rect 1608 -665 1610 -661
+rect 587 -691 588 -681
+rect 607 -682 608 -672
+<< pdiffusion >>
+rect 756 325 757 326
+rect 282 15 283 16
+<< metal1 >>
+rect 426 1382 447 1386
+rect 197 1340 208 1344
+rect 202 1303 215 1307
+rect 443 1290 447 1382
+rect 443 1286 477 1290
+rect 1293 1283 1314 1287
+rect 980 1255 995 1259
+rect 991 1245 995 1255
+rect 238 1240 251 1245
+rect 991 1241 1073 1245
+rect 1224 1204 1263 1209
+rect 5 1198 19 1202
+rect 15 1161 25 1165
+rect 268 1108 286 1112
+rect 268 1107 272 1108
+rect 237 1103 272 1107
+rect 1349 1104 1376 1108
+rect 1031 1080 1084 1085
+rect 1079 1067 1084 1080
+rect 3 1061 17 1065
+rect 1079 1062 1125 1067
+rect 9 1024 24 1028
+rect 1283 1025 1312 1030
+rect 236 958 249 963
+rect 5 916 16 920
+rect 4 879 23 883
+rect 1495 872 1534 876
+rect 283 825 287 852
+rect 1197 843 1233 848
+rect 1228 834 1233 843
+rect 1228 829 1272 834
+rect 232 821 287 825
+rect 1429 793 1471 798
+rect 0 779 12 783
+rect 4 743 19 747
+rect 245 644 254 649
+rect 249 641 254 644
+rect 249 636 257 641
+rect 10 602 25 606
+rect 10 565 32 569
+rect 1560 519 1582 523
+rect 247 504 294 508
+rect 1320 477 1339 481
+rect 1320 476 1325 477
+rect 1256 471 1325 476
+rect 13 462 27 466
+rect 1494 440 1512 445
+rect 14 425 34 429
+rect 248 315 309 318
+rect 304 313 309 315
+rect 15 273 30 277
+rect 16 237 36 241
+rect 244 158 290 162
+rect 12 116 24 120
+rect 10 79 31 83
+rect 1717 68 1749 72
+rect 1270 50 1323 55
+rect 1318 41 1323 50
+rect 1318 37 1351 41
+rect 1347 -14 1351 37
+rect 1479 26 1497 30
+rect 253 -28 397 -24
+rect 217 -76 234 -74
+rect 212 -80 234 -76
+rect 253 -269 257 -28
+rect 642 -37 1284 -33
+rect 270 -48 330 -44
+rect 196 -273 257 -269
+rect 253 -278 257 -273
+rect 270 -270 274 -48
+rect 1481 -58 1485 26
+rect 1651 -11 1672 -6
+rect 1465 -62 1485 -58
+rect 512 -74 539 -70
+rect 633 -124 677 -120
+rect 746 -122 932 -118
+rect 545 -132 677 -128
+rect 928 -129 932 -122
+rect 928 -133 955 -129
+rect 931 -143 953 -139
+rect 1032 -141 1044 -137
+rect 932 -217 936 -143
+rect 755 -223 790 -219
+rect 856 -221 936 -217
+rect 755 -229 759 -223
+rect 613 -235 661 -231
+rect 727 -233 759 -229
+rect 772 -231 787 -227
+rect 545 -243 661 -239
+rect 270 -274 330 -270
+rect 397 -272 637 -268
+rect 253 -282 329 -278
+rect 772 -278 776 -231
+rect 1040 -232 1044 -141
+rect 1040 -236 1060 -232
+rect 624 -282 776 -278
+rect 1041 -244 1057 -240
+rect 1134 -244 1147 -240
+rect 1041 -344 1045 -244
+rect 546 -353 655 -349
+rect 722 -351 778 -347
+rect 847 -350 908 -346
+rect 979 -348 1045 -344
+rect 594 -361 655 -357
+rect 751 -360 780 -356
+rect 873 -358 910 -354
+rect 751 -392 755 -360
+rect 624 -396 755 -392
+rect 873 -403 877 -358
+rect 1143 -360 1147 -244
+rect 1143 -364 1163 -360
+rect 604 -407 877 -403
+rect 1147 -373 1161 -369
+rect 1239 -373 1302 -369
+rect 546 -479 666 -475
+rect 734 -477 781 -473
+rect 851 -476 913 -472
+rect 909 -480 923 -476
+rect 993 -478 1046 -474
+rect 1042 -481 1046 -478
+rect 1147 -479 1151 -373
+rect 566 -487 567 -483
+rect 574 -487 666 -483
+rect 760 -486 782 -482
+rect 616 -524 617 -520
+rect 760 -520 764 -486
+rect 624 -524 764 -520
+rect 877 -488 924 -484
+rect 1042 -485 1063 -481
+rect 1134 -483 1151 -479
+rect 877 -528 881 -488
+rect 604 -532 881 -528
+rect 1014 -493 1065 -489
+rect 1014 -541 1018 -493
+rect 1298 -505 1302 -373
+rect 1298 -509 1331 -505
+rect 584 -545 1018 -541
+rect 1322 -518 1331 -514
+rect 1408 -517 1421 -513
+rect 545 -640 659 -636
+rect 727 -638 798 -634
+rect 794 -644 798 -638
+rect 1053 -635 1106 -631
+rect 1177 -633 1215 -629
+rect 1322 -632 1326 -518
+rect 1211 -635 1215 -633
+rect 624 -648 659 -644
+rect 794 -648 815 -644
+rect 884 -645 952 -641
+rect 1053 -643 1057 -635
+rect 1211 -639 1241 -635
+rect 1310 -636 1326 -632
+rect 948 -646 952 -645
+rect 948 -650 965 -646
+rect 1033 -647 1057 -643
+rect 1076 -643 1109 -639
+rect 752 -655 815 -651
+rect 752 -678 756 -655
+rect 604 -682 756 -678
+rect 912 -657 965 -653
+rect 912 -687 916 -657
+rect 584 -691 916 -687
+rect 1076 -698 1080 -643
+rect 564 -702 1080 -698
+rect 1215 -646 1242 -642
+rect 1215 -713 1219 -646
+rect 555 -717 1219 -713
+rect 1417 -723 1421 -517
+rect 1883 -601 1901 -597
+rect 1883 -622 1887 -601
+rect 1874 -623 1887 -622
+rect 1828 -626 1887 -623
+rect 1828 -627 1878 -626
+rect 1582 -668 1607 -664
+rect 1417 -727 1427 -723
+rect 1582 -731 1586 -668
+rect 643 -735 1427 -731
+rect 1505 -735 1586 -731
+<< m2contact >>
+rect 251 1240 256 1245
+rect 299 1240 304 1245
+rect 249 958 254 963
+rect 295 958 300 963
+rect 257 636 262 641
+rect 302 636 307 641
+rect 304 308 309 313
+rect 304 269 309 274
+rect 234 -80 240 -74
+rect 637 -37 642 -32
+rect 265 -79 270 -74
+rect 627 -125 633 -119
+rect 539 -132 545 -126
+rect 606 -236 613 -230
+rect 538 -244 545 -238
+rect 637 -272 642 -267
+rect 617 -283 624 -277
+rect 539 -354 546 -348
+rect 587 -361 594 -355
+rect 617 -396 624 -390
+rect 597 -407 604 -401
+rect 539 -479 546 -473
+rect 567 -487 574 -481
+rect 617 -524 624 -518
+rect 597 -532 604 -526
+rect 577 -545 584 -539
+rect 538 -640 545 -634
+rect 617 -648 624 -642
+rect 597 -682 604 -676
+rect 577 -691 584 -685
+rect 557 -702 564 -696
+rect 548 -717 555 -711
+rect 637 -735 643 -729
+<< metal2 >>
+rect 256 1240 299 1245
+rect 254 958 295 963
+rect 262 636 302 641
+rect 304 274 309 308
+rect 539 -69 544 1276
+rect 240 -79 265 -74
+rect 539 -126 544 -74
+rect 539 -238 544 -132
+rect 539 -348 544 -244
+rect 539 -473 544 -354
+rect 539 -634 544 -479
+rect 539 -1007 544 -640
+rect 548 -711 553 28
+rect 557 -696 562 29
+rect 567 -481 572 27
+rect 548 -1006 553 -717
+rect 557 -1009 562 -702
+rect 567 -1009 572 -487
+rect 577 -539 582 31
+rect 587 -355 592 27
+rect 577 -685 582 -545
+rect 577 -1010 582 -691
+rect 587 -1011 592 -361
+rect 597 -401 602 29
+rect 607 -230 612 28
+rect 597 -526 602 -407
+rect 597 -676 602 -532
+rect 597 -1011 602 -682
+rect 607 -1011 612 -236
+rect 617 -277 622 27
+rect 627 -119 632 28
+rect 637 -32 642 1276
+rect 617 -390 622 -283
+rect 617 -518 622 -396
+rect 617 -642 622 -524
+rect 617 -1011 622 -648
+rect 627 -1011 632 -125
+rect 637 -267 642 -37
+rect 637 -729 642 -272
+rect 637 -1012 642 -735
+use and  and_6
+timestamp 1731936772
+transform 1 0 706 0 1 -512
+box -44 -1 33 89
+use and  and_10
+timestamp 1731936772
+transform 1 0 699 0 1 -673
+box -44 -1 33 89
+use and  and_8
+timestamp 1731936772
+transform 1 0 964 0 1 -513
+box -44 -1 33 89
+use and  and_7
+timestamp 1731936772
+transform 1 0 822 0 1 -511
+box -44 -1 33 89
+use and  and_12
+timestamp 1731936772
+transform 1 0 1005 0 1 -682
+box -44 -1 33 89
+use and  and_11
+timestamp 1731936772
+transform 1 0 855 0 1 -680
+box -44 -1 33 89
+use and  and_15
+timestamp 1731936772
+transform 1 0 1281 0 1 -671
+box -44 -1 33 89
+use and  and_9
+timestamp 1731936772
+transform 1 0 1105 0 1 -518
+box -44 -1 33 89
+use and  and_13
+timestamp 1731936772
+transform 1 0 1149 0 1 -668
+box -44 -1 33 89
+use or  or_2
+timestamp 1731936518
+transform 1 0 1367 0 1 -556
+box -38 4 46 99
+use or  or_3
+timestamp 1731936518
+transform 1 0 1463 0 1 -774
+box -38 4 46 99
+use Dff  Dff_16
+timestamp 1731931680
+transform 1 0 1616 0 1 -660
+box -12 -46 216 80
+use inverter  inverter_5
+timestamp 1731872184
+transform 1 0 1894 0 1 -589
+box 0 -47 29 41
+use Dff  Dff_15
+timestamp 1731931680
+transform 1 0 -16 0 1 -306
+box -12 -46 216 80
+use and  and_3
+timestamp 1731936772
+transform 1 0 370 0 1 -307
+box -44 -1 33 89
+use and  and_0
+timestamp 1731936772
+transform 1 0 701 0 1 -268
+box -44 -1 33 89
+use and  and_2
+timestamp 1731936772
+transform 1 0 695 0 1 -386
+box -44 -1 33 89
+use and  and_1
+timestamp 1731936772
+transform 1 0 827 0 1 -256
+box -44 -1 33 89
+use and  and_5
+timestamp 1731936772
+transform 1 0 950 0 1 -383
+box -44 -1 33 89
+use and  and_4
+timestamp 1731936772
+transform 1 0 820 0 1 -385
+box -44 -1 33 89
+use or  or_1
+timestamp 1731936518
+transform 1 0 1198 0 1 -412
+box -38 4 46 99
+use or  or_0
+timestamp 1731936518
+transform 1 0 1092 0 1 -283
+box -38 4 46 99
+use Dff  Dff_14
+timestamp 1731931680
+transform 1 0 0 0 1 -113
+box -12 -46 216 80
+use xor  xor_3
+timestamp 1731948871
+transform 1 0 292 0 1 -88
+box 0 -29 224 67
+use and  and_14
+timestamp 1731936772
+transform 1 0 717 0 1 -157
+box -44 -1 33 89
+use or  or_6
+timestamp 1731936518
+transform 1 0 989 0 1 -181
+box -38 4 46 99
+use xor  xor_7
+timestamp 1731948871
+transform 1 0 1245 0 1 -76
+box 0 -29 224 67
+use Dff  Dff_13
+timestamp 1731931680
+transform 1 0 1505 0 1 35
+box -12 -46 216 80
+use Dff  Dff_8
+timestamp 1731931680
+transform 1 0 32 0 1 125
+box -12 -46 216 80
+use Dff  Dff_7
+timestamp 1731931680
+transform 1 0 37 0 1 282
+box -12 -46 216 80
+use inverter  inverter_4
+timestamp 1731872184
+transform 1 0 1748 0 1 80
+box 0 -47 29 41
+use Dff  Dff_6
+timestamp 1731931680
+transform 1 0 35 0 1 471
+box -12 -46 216 80
+use Dff  Dff_5
+timestamp 1731931680
+transform 1 0 33 0 1 611
+box -12 -46 216 80
+use Dff  Dff_12
+timestamp 1731931680
+transform 1 0 1348 0 1 486
+box -12 -46 216 80
+use inverter  inverter_3
+timestamp 1731872184
+transform 1 0 1581 0 1 531
+box 0 -47 29 41
+use Dff  Dff_4
+timestamp 1731931680
+transform 1 0 20 0 1 788
+box -12 -46 216 80
+use Dff  Dff_3
+timestamp 1731931680
+transform 1 0 24 0 1 925
+box -12 -46 216 80
+use Dff  Dff_2
+timestamp 1731931680
+transform 1 0 25 0 1 1070
+box -12 -46 216 80
+use Dff  Dff_11
+timestamp 1731931680
+transform 1 0 1283 0 1 839
+box -12 -46 216 80
+use inverter  inverter_1
+timestamp 1731872184
+transform 1 0 1375 0 1 1116
+box 0 -47 29 41
+use Dff  Dff_10
+timestamp 1731931680
+transform 1 0 1137 0 1 1071
+box -12 -46 216 80
+use inverter  inverter_2
+timestamp 1731872184
+transform 1 0 1532 0 1 884
+box 0 -47 29 41
+use Dff  Dff_0
+timestamp 1731931680
+transform 1 0 216 0 1 1349
+box -12 -46 216 80
+use Dff  Dff_1
+timestamp 1731931680
+transform 1 0 26 0 1 1207
+box -12 -46 216 80
+use Dff  Dff_9
+timestamp 1731931680
+transform 1 0 1081 0 1 1250
+box -12 -46 216 80
+use inverter  inverter_0
+timestamp 1731872184
+transform 1 0 1314 0 1 1295
+box 0 -47 29 41
+use CLAre  CLAre_0
+timestamp 1733079504
+transform 1 0 297 0 1 1164
+box -15 -1149 978 144
+<< labels >>
+rlabel metal1 200 1341 200 1341 1 Cin
+rlabel metal1 205 1304 205 1304 1 clk
+rlabel metal1 7 1201 7 1201 1 A0
+rlabel metal1 18 1163 18 1163 1 clk
+rlabel metal1 11 1026 11 1026 1 clk
+rlabel metal1 7 1063 7 1063 1 B0
+rlabel metal1 7 918 7 918 1 A1
+rlabel metal1 6 880 6 880 1 clk
+rlabel metal1 8 745 8 745 1 clk
+rlabel metal1 1 781 1 781 3 B1
+rlabel metal1 12 603 12 603 1 A2
+rlabel metal1 13 566 13 566 1 clk
+rlabel metal1 15 463 15 463 1 B2
+rlabel metal1 17 427 17 427 1 clk
+rlabel metal1 17 275 17 275 1 A3
+rlabel metal1 19 238 19 238 1 clk
+rlabel metal1 16 118 16 118 1 B3
+rlabel metal1 14 80 14 80 1 clk
+rlabel metal1 1249 1206 1250 1206 1 clk
+rlabel metal1 1304 1284 1305 1284 1 S0
+rlabel metal1 1364 1105 1365 1105 1 S1
+rlabel metal1 1518 874 1519 874 1 S2
+rlabel metal1 1572 521 1573 521 1 S3
+rlabel metal1 1507 442 1508 442 1 clk
+rlabel metal1 1466 795 1467 795 1 clk
+rlabel metal1 1302 1026 1303 1026 1 clk
+rlabel metal1 448 1287 450 1288 1 Cin1
+rlabel metal2 266 1243 266 1243 1 A10
+rlabel metal1 266 1104 266 1104 1 B10
+rlabel metal2 269 959 269 959 1 A11
+rlabel metal1 272 822 272 822 1 B11
+rlabel metal2 277 638 277 638 1 A12
+rlabel metal1 278 505 278 505 1 B12
+rlabel metal1 276 159 276 159 1 B13
+rlabel metal2 539 -69 544 1276 1 P4
+rlabel metal2 638 845 641 852 1 G4
+rlabel metal1 1668 -9 1669 -9 1 clk
+rlabel metal1 1741 70 1743 71 1 S4
+<< end >>

@@ -1,0 +1,84 @@
+.include CLA_5bit.sub
+.include TSMC_180nm.txt
+.param SUPPLY=1.8
+.global gnd vdd
+
+Vdd vdd gnd {SUPPLY}
+
+vinclk clk gnd pulse 0 1.8 0.9ns 0ns 0ns 0.65ns 1.3ns
+
+VinA0 A0 gnd pulse 0 1.8 0ns 0ns 0ns 2ns 4ns
+VinA1 A1 gnd pulse 0 1.8 0ns 0ns 0ns 2ns 4ns
+VinA2 A2 gnd pulse 0 1.8 0ns 0ns 0ns 2ns 4ns
+VinA3 A3 gnd pulse 1.8 0 0ns 0ns 0ns 2ns 4ns
+VinA4 A4 gnd pulse 0 1.8 0ns 0ns 0ns 2ns 4ns
+
+VinB0 B0 gnd pulse 1.8 0 0ns 0ns 0ns 2ns 4ns
+VinB1 B1 gnd pulse 1.8 0 0ns 0ns 0ns 2ns 4ns
+VinB2 B2 gnd pulse 1.8 0 0ns 0ns 0ns 2ns 4ns
+VinB3 B3 gnd pulse 0 1.8 0ns 0ns 0ns 2ns 4ns
+VinB4 B4 gnd pulse 0 1.8 0ns 0ns 0ns 2ns 4ns
+
+VinCin Cin gnd pulse 0 1.8 0ns 0ns 0ns 2ns 4ns
+
+xCLA clk Cin A0 A1 A2 A3 A4 B0 B1 B2 B3 B4 S0 S1 S2 S3 S4 Cout A0d A1d A2d A3d A4d B0d B1d B2d B3d B4d Cind vdd gnd CLA_5bit 
+
+xinverter0 S0 S0n vdd gnd NOT 
+xinverter1 S1 S1n vdd gnd NOT
+xinverter2 S2 S2n vdd gnd NOT
+xinverter3 S3 S3n vdd gnd NOT
+xinverter4 S4 S4n vdd gnd NOT
+xinverterC Cout Coutn vdd gnd NOT
+
+.tran 0.001n 10n 
+
+.control
+run
+set color0 = white 
+set color1 = black
+set xbrushwidth=2
+
+
+set curplottitle="Madhur-Kankane-2024102061-7-output"
+
+plot 8+A4d 6+A3d 4+A2d 2+A1d A0d title 'Input A (A4...A0)'
+
+plot 8+B4d 6+B3d 4+B2d 2+B1d B0d title 'Input B (B4...B0)'
+
+plot 10+Cout 8+S4 6+S3 4+S2 2+S1 S0 title 'Outputs (Cout, S4...S0)'
+
+plot 4+clk 2+S0 4+S4 6+Cout title 'Timing Check (Clock vs Outputs)'
+
+.endc
+
+* S0
+.measure tran tpdrS0 trig v(clk) val={0.5*SUPPLY} rise=2 targ v(S0) val={0.5*SUPPLY} fall=1
+.measure tran tpdfS0 trig v(clk) val={0.5*SUPPLY} rise=3 targ v(S0) val={0.5*SUPPLY} rise=1
+.measure tran tpdS0 param='(tpdrS0+tpdfS0)/2'
+
+* S1
+.measure tran tpdrS1 trig v(clk) val={0.5*SUPPLY} rise=2 targ v(S1) val={0.5*SUPPLY} fall=1
+.measure tran tpdfS1 trig v(clk) val={0.5*SUPPLY} rise=3 targ v(S1) val={0.5*SUPPLY} rise=1
+.measure tran tpdS1 param='(tpdrS1+tpdfS1)/2'
+
+* S2
+.measure tran tpdrS2 trig v(clk) val={0.5*SUPPLY} rise=2 targ v(S2) val={0.5*SUPPLY} fall=1
+.measure tran tpdfS2 trig v(clk) val={0.5*SUPPLY} rise=3 targ v(S2) val={0.5*SUPPLY} rise=1
+.measure tran tpdS2 param='(tpdrS2+tpdfS2)/2'
+
+* S3
+.measure tran tpdrS3 trig v(clk) val={0.5*SUPPLY} rise=2 targ v(S3) val={0.5*SUPPLY} fall=1
+.measure tran tpdfS3 trig v(clk) val={0.5*SUPPLY} rise=3 targ v(S3) val={0.5*SUPPLY} rise=1
+.measure tran tpdS3 param='(tpdrS3+tpdfS3)/2'
+
+* S4 (New Bit)
+.measure tran tpdrS4 trig v(clk) val={0.5*SUPPLY} rise=2 targ v(S4) val={0.5*SUPPLY} fall=1
+.measure tran tpdfS4 trig v(clk) val={0.5*SUPPLY} rise=3 targ v(S4) val={0.5*SUPPLY} rise=1
+.measure tran tpdS4 param='(tpdrS4+tpdfS4)/2'
+
+* Cout
+.measure tran tpdrCout trig v(clk) val={0.5*SUPPLY} rise=2 targ v(Cout) val={0.5*SUPPLY} rise=1
+.measure tran tpdfCout trig v(clk) val={0.5*SUPPLY} rise=3 targ v(Cout) val={0.5*SUPPLY} fall=1
+.measure tran tpdCout param='(tpdrCout+tpdfCout)/2'
+
+.end

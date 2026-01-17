@@ -1,0 +1,9 @@
+.include 5_NAND.sub
+.include NOT.sub
+
+.subckt 5_AND v w x y z out vdd gnd l=0.09u w_n=0.9u w_p=1.8u
+
+xand5 v w x y z nand_out vdd gnd 5_NAND lambda={l} width_N={w_n} width_P={w_p}
+xinv nand_out out vdd gnd NOT lambda={l} width_N={w_n} width_P={w_p}
+
+.ends 5_AND
